@@ -1,0 +1,134 @@
+/* 打印样式 - 用于PDF导出 */
+@media print {
+  /* 基本页面设置 */
+  @page {
+    margin: 2cm;
+    size: A4;
+  }
+  
+  body {
+    font-family: 'Times New Roman', serif;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+    font-size: 12pt;
+  }
+  
+  /* 隐藏不需要打印的元素 */
+  header button,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+  
+  /* 标题样式 */
+  h1 {
+    font-size: 24pt;
+    margin-bottom: 1cm;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: 18pt;
+    margin-top: 0.8cm;
+    margin-bottom: 0.5cm;
+    border-bottom: 1pt solid #ddd;
+    padding-bottom: 0.2cm;
+  }
+  
+  h3 {
+    font-size: 14pt;
+    margin-top: 0.6cm;
+    margin-bottom: 0.3cm;
+  }
+  
+  h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 0.4cm;
+    margin-bottom: 0.2cm;
+  }
+  
+  /* 段落和列表样式 */
+  p {
+    margin-bottom: 0.3cm;
+    text-align: justify;
+  }
+  
+  ul, ol {
+    margin-left: 0.5cm;
+    margin-bottom: 0.5cm;
+  }
+  
+  li {
+    margin-bottom: 0.2cm;
+  }
+  
+  /* 链接样式 */
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  /* 引用样式 */
+  blockquote {
+    margin: 0.5cm 1cm;
+    padding-left: 0.5cm;
+    border-left: 3pt solid #ccc;
+    font-style: italic;
+  }
+  
+  /* 代码块样式 */
+  pre, code {
+    font-family: 'Courier New', monospace;
+    background: #f5f5f5;
+    padding: 0.2cm;
+    border: 1pt solid #ddd;
+    white-space: pre-wrap;
+    font-size: 10pt;
+  }
+  
+  /* 表格样式 */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0.5cm;
+  }
+  
+  th, td {
+    border: 1pt solid #ddd;
+    padding: 0.2cm;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+  }
+  
+  /* 页眉页脚 */
+  .document-title {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    margin-bottom: 1cm;
+  }
+  
+  /* 参考文献样式 */
+  .references {
+    margin-top: 1cm;
+    border-top: 1pt solid #ddd;
+    padding-top: 0.5cm;
+  }
+  
+  .references h2 {
+    font-size: 16pt;
+  }
+  
+  .reference-item {
+    margin-bottom: 0.3cm;
+    padding-left: 1cm;
+    text-indent: -1cm;
+  }
+}
