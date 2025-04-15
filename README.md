@@ -62,7 +62,7 @@ npm start
 
 推荐使用Vercel进行部署，只需点击下方按钮：
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Froveneleven%2Fdeepresearchify)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fgeegl%2Fdeepresearchify)
 
 #### Vercel环境变量配置
 
