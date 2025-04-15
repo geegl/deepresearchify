@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/next"
+      }
+    ],
+    "regions": ["hnd1", "sin1"],
+    "functions": {
+      "api/generate-pdf": {
+        "memory": 1024,
+        "maxDuration": 60
+      }
+    },
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }
